@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply bg-bg font-body text-darkText antialiased;
+}
+
+.dark body {
+  color-scheme: dark;
+}
+
+.section-heading {
+  @apply text-center font-display text-4xl text-darkText dark:text-white md:text-5xl;
+}
+
+::selection {
+  @apply bg-primary text-white;
+}
